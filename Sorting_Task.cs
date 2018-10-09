@@ -21,7 +21,7 @@ for(int i=0;i<m1.Length;i++)
 	for (int i = 1; i < m1.Length; i++)
 {
  int temp;
-    for (int j = 0; j <m1.Length; j++)
+    for (int j = 0; j <i; j++)
     {
         if (m1[j]>m1[i])
         {//swap method
