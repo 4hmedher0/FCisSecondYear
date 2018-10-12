@@ -7,7 +7,7 @@ public class Program
         
 	Console.WriteLine("\"go to go ");
  int [] arr =new int[] {2,4,7,9,0,0};
- int real_items=4;
+ int real_items=4; // تحديد عدد العناصر المشغولة 
  int pos=2;//حدد الموقع 
  if(real_items<arr.Length) //#تتاكد ان في عنصر فاضي في المصفوفة
 { real_items++; //اقف علي اول مكان فاضي عشان تشفت فيه
