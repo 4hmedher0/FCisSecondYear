@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World\t ***Linear Search***");
+	    int [] m1= {2,4,5,6,0,7,2,90,0};
+        LinearSearch(m1,2);
+	}
+	
+	public static void LinearSearch (int [] arr, int val )
+	{ //bool search=true;
+	  int [] foundeditems=new int [arr.Length]; 
+	  int i=0;
+	while(i<arr.Length)
+	{
+	if(arr[i]==val)
+	{
+	foundeditems[i]=val;
+	Console.WriteLine("the index {0} is: {1}",i,foundeditems[i]);
+	} 
+		i++;
+	
+	}
+	
+	 
+	}
+}
