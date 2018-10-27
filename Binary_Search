@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace binary_search
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           int[] arr = { 4,5,6,7,8,9,90,100 };
+            Binary_Search(arr, 90);
+                   
+        }
+        static void Binary_Search(int [] a,int val)
+        {
+            int first = 0;int last = a.Length;
+            int mid=(first+last)/ 2;
+           
+                if(val==a[mid])
+                { Console.WriteLine("the value is:{0} it's index is    {1}",val,mid); }
+             else if(val > a[mid] )
+                {
+                    first = mid + 1;
+                Search(a, first, mid, last, val);
+            }
+            else if (val < a[mid])
+                {
+                    last = mid - 1;
+                    Search(a,first, mid, last, val);
+                }
+
+            
+        }
+        static void Search(int [] a,int first,int mid, int last, int val)
+        {
+
+            for (int i =first;i<last;i++)
+            {
+              if(val==a[i])
+                    Console.WriteLine("the value is {0}  it's index is : {1}",val,i);
+
+            }
+        }
+    }
+}
