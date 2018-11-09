@@ -1,0 +1,44 @@
+using System;
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] arr = {200,1,2,3,6,-1,-2,-3,-100,100};
+            Console.WriteLine("the MAX value is :{0:d3} \t ", GET_MAX(arr));
+            Console.WriteLine("the MIn value is : {0:d3} \t \a",GET_Min(arr));
+        }
+        public static int GET_MAX(int[] arr)
+        {
+            int Max = arr[0];
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                if (Max > arr[i + 1])
+                {
+                    Max = Max;
+                }
+                else
+                    Max = arr[i + 1];
+
+            }
+            return Max;
+        }
+        public static int GET_Min(int[] arr)
+        {
+            int Min = arr[0];
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                if (Min < arr[i + 1])
+                {
+                    Min = Min;
+                }
+                else
+                    Min = arr[i + 1];
+
+            }
+            return Min;
+        }
+    }
+}
